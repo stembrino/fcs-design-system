@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# customer UI pre-commit stages
+yarn lint:fix
+
+# Commit will be aborted
+# exit 1
