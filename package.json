@@ -11,15 +11,15 @@
     "Typescript",
     "Storybook"
   ],
-  "homepage": "https://github.com/HarveyD/react-component-library#readme",
+  "homepage": "http://stembrino.github.io/slot-design-system",
   "bugs": {
-    "url": "https://github.com/HarveyD/react-component-library/issues"
+    "url": "https://github.com/stembrino/slot-design-system/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HarveyD/react-component-library.git"
+    "url": "git+https://github.com/stembrino/slot-design-system"
   },
-  "author": "Harvey Delaney",
+  "author": "",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -30,8 +30,12 @@
     "build": "rm -fr dist/ && rollup -c",
     "generate": "node ./util/create-component",
     "prepublishOnly": "npm run dist",
-    "storybook": "storybook dev",
-    "storybook:export": "storybook dist",
+    "gh:page":"gh-pages -d storybook-static",
+    "sb": "storybook dev",
+    "sb:export": "storybook dist",
+    "sb:build": "storybook build",
+    "sb:deploy": "rm -fr storybook-static && yarn sb:build && gh-pages -d storybook-static",
+    "build-storybook": "",
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "eslint **/* --ext .js,.jsx,.ts,.tsx",
@@ -64,6 +68,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-storybook": "^0.6.12",
+    "gh-pages": "^5.0.0",
     "husky": "^8.0.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
