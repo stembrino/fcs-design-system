@@ -45,7 +45,11 @@ Avoid use external library. use just if really needed. This library.
 ## Unit Tests
 ❗Everything core component parts should be tested, avoiding unnecessary tests.
 
-- **Snapshot Test**: required only if you are using another component inside your component. If not, do not snapshot tests. Use the `container` to do it:     
-`const { container } = render()`
+- **Snapshot Test**: required only if you are using another component inside your component. If not, do not snapshot tests. Use the `container` to do it: 
+```ts
+const { container } = renderComponent();
+
+expect(screen).toBeInTheDocument();
+```
 
 - Try coverage all state of the component with relevant actions unit tests.
