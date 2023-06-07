@@ -49,7 +49,7 @@ Avoid use external library. use just if really needed. This library.
 ```ts
 const { container } = renderComponent();
 
-expect(screen).toBeInTheDocument();
+expect(container).toMatchSnapshot();
 ```
 
 - Try coverage all state of the component with relevant actions unit tests.
