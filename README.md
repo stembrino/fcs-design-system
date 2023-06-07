@@ -4,6 +4,7 @@
 https://stembrino.github.io/slot-design-system/
 
 ## Start develop 🚀
+> Recommended VSC extensions: https://github.com/stembrino/save-docs-fcs/blob/master/docs/vsc.md
 
 ```console
 yarn prepare
