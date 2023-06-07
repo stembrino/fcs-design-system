@@ -3,6 +3,7 @@
 
 # customer UI pre-commit stages
 yarn lint:fix
+yarn prettier:css
 
 # Commit will be aborted
 # exit 1
