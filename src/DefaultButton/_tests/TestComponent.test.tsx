@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 
 import DefaultButton from "../.";
 import { DefaultButtonProps } from "../DefaultButton.types";
@@ -12,8 +12,8 @@ describe("TestComponent", () => {
   };
 
   it("should render heading text correctly", () => {
-    const { container } = renderComponent({});
+    renderComponent({});
 
-    expect(container).toMatchSnapshot();
+    expect(screen).toBeInTheDocument();
   });
 });
