@@ -1,5 +1,10 @@
+:root {
+  --border-color: #000000;
+  --button-primary: #000000;
+}
+
 .test-component {
-  background-color: var(--background);
+  background-color: var(--border-color);
   color: var(--font-color);
   border: 1px solid var(--harvey-black);
   padding: 16px;

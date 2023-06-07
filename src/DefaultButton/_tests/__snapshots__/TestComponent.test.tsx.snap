@@ -3,6 +3,7 @@
 exports[`TestComponent should render heading text correctly 1`] = `
 <div>
   <div
+    class="test-component primary"
     role="button"
   >
     test
