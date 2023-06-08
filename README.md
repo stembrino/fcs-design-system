@@ -13,6 +13,9 @@ yarn sb
 ```
 
 # Rules
+- Prioritize stateless over stateful components.
+- Do not "hadouken 🥦" the functions.
+- Complex functions must have unit tests.
 
 ## External library
 Avoid use external library. use just if really needed. This library.
