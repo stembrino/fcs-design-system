@@ -1,10 +1,9 @@
-import { ComponentSizes } from "../util/commons.types";
+import { type VariantProps } from "class-variance-authority";
+import { variants } from "./SlotButton.variants";
 
-export interface SlotButtonProps {
+export interface SlotButtonProps extends VariantProps<typeof variants> {
   label: string;
   rounded?: boolean;
-  size?: ComponentSizes;
   width?: string;
-  border?: boolean;
   onClick: (event: React.MouseEvent<HTMLDivElement>) => void;
 }

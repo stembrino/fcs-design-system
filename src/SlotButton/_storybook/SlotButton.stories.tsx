@@ -16,5 +16,9 @@ export default meta;
 type Story = StoryObj<typeof SlotButton>;
 
 export const Primary: Story = {
-  args: { label: "BUTTON", border: false, rounded: false, size: "medium", width: "150px" },
+  args: { label: "BUTTON", theme: "primary", rounded: false, size: "medium", width: "150px" },
+};
+
+export const Secondary: Story = {
+  args: { label: "BUTTON", theme: "secondary", rounded: false, size: "medium", width: "150px" },
 };

@@ -9,7 +9,7 @@ div {
   box-sizing: border-box;
 }
 
-.button-wrapper {
+.base {
   cursor: pointer;
   display: inline-flex;
   justify-content: center;
@@ -22,39 +22,42 @@ div {
   min-width: 80px;
 }
 
-.button-wrapper:hover {
-  background-color: var(--button-primary-hover);
+.base:hover {
   filter: drop-shadow(0px 1px 2px rgba(var(--button-primary-rgb), 0.14))
-    drop-shadow(0px 1px 2px rgba(var(--button-primary-rgb), 0.12))
-    drop-shadow(0px 1px 2px rgba(var(--button-primary-rgb), 0.2));
+  drop-shadow(0px 1px 2px rgba(var(--button-primary-rgb), 0.12))
+  drop-shadow(0px 1px 2px rgba(var(--button-primary-rgb), 0.2));
 }
 
-.button-wrapper.rounded {
+.rounded {
   border-radius: 100px;
 }
 
-.button-wrapper.small {
-  height: 32px;
+.primary {
+  background-color: var(--button-primary-hover);
 }
 
-.button-wrapper.medium {
-  height: 40px;
-}
-
-.button-wrapper.large {
-  height: 48px;
-}
-
-.button-wrapper.border {
+.secondary {
   color: rgba(var(--button-primary-rgb));
   background-color: transparent;
   border: 2px solid rgba(var(--button-primary-rgb));
 }
 
-.button-wrapper.border:hover {
+.secondary:hover {
   color: var(--button-primary-hover);
   border-color: var(--button-primary-hover);
 } 
+
+.small {
+  height: 32px;
+}
+
+.medium {
+  height: 40px;
+}
+
+.large {
+  height: 48px;
+}
 
 .label {
   margin-inline: var(--label-overflow-padding);
