@@ -7,6 +7,9 @@ const meta: Meta<typeof SlotButton> = {
   component: SlotButton,
   argTypes: {
     onClick: { action: "clicked" },
+    color: {
+      control: { type: "color" },
+    },
     variant: {
       options: ["primary", "secondary"],
       control: { type: "radio" },
