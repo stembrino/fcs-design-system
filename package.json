@@ -36,7 +36,6 @@
     "sb:export": "storybook dist",
     "sb:build": "storybook build",
     "sb:deploy": "rm -fr storybook-static && yarn sb:build && gh-pages -d storybook-static",
-    "build-storybook": "",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:update": "jest --updateSnapshot",
