@@ -11,7 +11,7 @@ div {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  color: var(--slot-color-white);
+  color: var(--fcs-color-white);
   background-color: var(--button-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 5px;

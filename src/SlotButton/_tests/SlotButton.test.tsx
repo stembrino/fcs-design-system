@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 
 import SlotButton from "..";
 import { SlotButtonProps } from "../SlotButton.types";
@@ -22,7 +22,9 @@ describe("TestComponent", () => {
 
   it("should onClick be called when click", () => {
     const { onClickMock } = renderComponent({});
+    const button = screen.getByLabelText("Button");
+    fireEvent.click(button);
 
-    expect(onClickMock).toBeCalledTimes(1);
+    expect(onClickMock).toHaveBeenCalledTimes(1);
   });
 });

@@ -11,6 +11,7 @@ const DefaultButton: React.FC<SlotButtonProps> = ({
   width = "auto",
   variant = "primary",
   color = "#304ffe",
+  ariaLabel = "Button",
   onClick,
 }) => {
   const roundedClass = rounded ? styles.rounded : "";
@@ -25,6 +26,7 @@ const DefaultButton: React.FC<SlotButtonProps> = ({
       role="button"
       onClick={onClick}
       data-color="pink"
+      aria-label={ariaLabel}
     >
       <span className={styles.label}>{label}</span>
     </div>

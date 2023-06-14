@@ -1,4 +1,5 @@
-# Slot Design System
+# FCS Design System
+fcs-design-system
 
 ## Components Documentation 📰
 https://stembrino.github.io/slot-design-system/
