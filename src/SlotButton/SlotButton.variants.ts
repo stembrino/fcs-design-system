@@ -3,7 +3,7 @@ import styles from "./SlotButton.module.css";
 
 export const variants = cva(styles.base, {
   variants: {
-    theme: {
+    variant: {
       primary: styles.primary,
       secondary: styles.secondary,
     },
@@ -13,9 +13,9 @@ export const variants = cva(styles.base, {
       large: styles.large,
     },
   },
-  compoundVariants: [{ theme: "primary", size: "medium", className: styles.primaryMedium }],
+  compoundVariants: [{ variant: "primary", size: "medium" }],
   defaultVariants: {
-    theme: "primary",
+    variant: "primary",
     size: "medium",
   },
 });

@@ -9,7 +9,7 @@ const DefaultButton: React.FC<SlotButtonProps> = ({
   rounded = false,
   size = "medium",
   width = "auto",
-  theme = "primary",
+  variant = "primary",
   onClick,
 }) => {
   const roundedClass = rounded ? styles.rounded : "";
@@ -17,7 +17,7 @@ const DefaultButton: React.FC<SlotButtonProps> = ({
   return (
     <div
       style={{ width }}
-      className={variants({ size, theme, className: classNames(roundedClass) })}
+      className={variants({ size, variant, className: classNames(roundedClass) })}
       role="button"
       onClick={onClick}
     >
