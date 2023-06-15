@@ -6,10 +6,10 @@
 You can install the [package](https://www.npmjs.com/package/fcs-design-system) via npm:
 
 ```console
-[TODO: Command to install with NPM]
+npm i fcs-design-system
 ```
 ```console
-[TODO: Command to install with YARN]
+yarn add fcs-design-system
 ```
 
 ---
