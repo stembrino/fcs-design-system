@@ -35,7 +35,7 @@ div {
 
 .base.secondary:hover {
   filter: grayscale(50%);
-} 
+}
 
 .base.small {
   height: 32px;
