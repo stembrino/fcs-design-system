@@ -23,9 +23,11 @@ yarn sb
 ```
 ---
 ## Rules 👩‍⚖️
+- Mobile first.
 - Prioritize stateless over stateful components.
 - Do not "hadouken 🥦" the functions.
 - Complex functions must have unit tests.
+- Ue [Figma community](https://www.figma.com/community/) to create a component.
 
 ### External library
 Avoid use external library. use just if really needed. This library.
