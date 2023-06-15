@@ -20,7 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/stembrino/fcs-design-system"
   },
-  "author": "",
+  "author": "Fabio R. de Carvalho",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
