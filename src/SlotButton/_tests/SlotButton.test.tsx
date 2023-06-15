@@ -7,12 +7,19 @@ import { SlotButtonProps } from "../SlotButton.types";
 describe("TestComponent", () => {
   const renderComponent = ({ label = "test" }: Partial<SlotButtonProps>) => {
     const onClickMock = jest.fn();
-    render(<SlotButton label={label} onClick={onClickMock} />);
+    const { container } = render(<SlotButton label={label} onClick={onClickMock} />);
 
     return {
+      container,
       onClickMock,
     };
   };
+
+  it("should snapshot match", () => {
+    const { container } = renderComponent({});
+
+    expect(container).toMatchSnapshot();
+  });
 
   it("should render heading text correctly", () => {
     renderComponent({});

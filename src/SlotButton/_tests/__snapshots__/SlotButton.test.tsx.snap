@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TestComponent should snapshot match 1`] = `
+<div>
+  <div
+    aria-label="Button"
+    class="base primary medium"
+    role="button"
+    style="width: auto; --button-color: #304ffe; --focus-color: #1c1b1b;"
+    tabindex="0"
+  >
+    <span
+      class="label"
+    >
+      test
+    </span>
+  </div>
+</div>
+`;
