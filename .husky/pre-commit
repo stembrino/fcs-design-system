@@ -2,8 +2,8 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 # customer UI pre-commit stages
-# yarn lint:fix
-# yarn prettier:css
+yarn lint:fix
+yarn lint:css
 
 # Commit will be aborted
 # exit 1
