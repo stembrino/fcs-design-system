@@ -1,10 +1,10 @@
 # FCS Design System
-fcs-design-system
+### fcs-design-system
 
-## Components Documentation 📰
-https://stembrino.github.io/slot-design-system/
+🔗 Documentation page: https://stembrino.github.io/slot-design-system/
 
-## Start develop 🚀
+---
+## Start develop
 > Recommended VSC extensions: https://github.com/stembrino/save-docs-fcs/blob/master/docs/vsc.md
 
 ```console
@@ -12,15 +12,15 @@ yarn prepare
 yarn
 yarn sb
 ```
-
-# Rules
+---
+## Rules
 - Prioritize stateless over stateful components.
 - Do not "hadouken 🥦" the functions.
 - Complex functions must have unit tests.
 
-## External library
+### External library
 Avoid use external library. use just if really needed. This library.
-## Component Structure
+### Component Structure
 
 ```
 /src
@@ -38,7 +38,7 @@ Avoid use external library. use just if really needed. This library.
 
 > Don't forget to add the component to your `index.ts` exports if you want the library to export the component!
 
-## Accessibility
+### Accessibility
 - Use ARIA: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
 
 - Include keyboard navigation.
@@ -46,7 +46,7 @@ Avoid use external library. use just if really needed. This library.
   - https://developer.mozilla.org/en-US/docs/Web/CSS/:focus
   - https://developer.mozilla.org/pt-BR/docs/Web/CSS/:focus-within
 
-## Unit Tests
+### Unit Tests
 ❗Everything core component parts should be tested, avoiding unnecessary tests.
 
 - **Snapshot Test**: required only if you are using another component inside your component. If not, do not snapshot tests. Use the `container` to do it: 
