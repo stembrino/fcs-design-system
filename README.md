@@ -3,6 +3,15 @@
 
 🔗 Documentation page: https://stembrino.github.io/slot-design-system/
 
+You can install the [package](https://www.npmjs.com/package/fcs-design-system) via npm:
+
+```console
+[TODO: Command to install with NPM]
+```
+```console
+[TODO: Command to install with YARN]
+```
+
 ---
 ## Start develop
 > Recommended VSC extensions: https://github.com/stembrino/save-docs-fcs/blob/master/docs/vsc.md
