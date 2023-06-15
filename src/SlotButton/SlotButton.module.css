@@ -20,6 +20,10 @@ div {
   min-width: 80px;
 }
 
+.base:focus {
+  outline: 3px solid var(--focus-color);
+}
+
 .base.rounded {
   border-radius: 100px;
 }

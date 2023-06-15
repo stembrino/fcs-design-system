@@ -12,11 +12,13 @@ const DefaultButton: React.FC<SlotButtonProps> = ({
   variant = "primary",
   color = "#304ffe",
   ariaLabel = "Button",
+  focusColor = "#1c1b1b",
   onClick,
 }) => {
   const roundedClass = rounded ? styles.rounded : "";
   const cssVariables = {
     "--button-color": color,
+    "--focus-color": focusColor,
   };
 
   return (
@@ -25,8 +27,8 @@ const DefaultButton: React.FC<SlotButtonProps> = ({
       className={variants({ size, variant, className: classNames(roundedClass) })}
       role="button"
       onClick={onClick}
-      data-color="pink"
       aria-label={ariaLabel}
+      tabIndex={0}
     >
       <span className={styles.label}>{label}</span>
     </div>

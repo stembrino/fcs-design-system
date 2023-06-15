@@ -10,6 +10,9 @@ const meta: Meta<typeof SlotButton> = {
     color: {
       control: { type: "color" },
     },
+    focusColor: {
+      control: { type: "color" },
+    },
     variant: {
       options: ["primary", "secondary"],
       control: { type: "radio" },
@@ -31,6 +34,7 @@ export const Primary: Story = {
     rounded: false,
     size: "medium",
     width: "150px",
+    ariaLabel: "Button",
   },
 };
 

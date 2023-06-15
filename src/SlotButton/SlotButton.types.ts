@@ -7,5 +7,6 @@ export interface SlotButtonProps extends VariantProps<typeof variants> {
   width?: string;
   color?: string;
   ariaLabel?: string;
+  focusColor?: string;
   onClick: (event: React.MouseEvent<HTMLDivElement>) => void;
 }
