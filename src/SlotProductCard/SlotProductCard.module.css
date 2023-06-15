@@ -1,0 +1,40 @@
+:root {
+  --fcs-color-white: #ffffff;
+}
+* {
+  outline: 1px solid black;
+}
+div {
+  box-sizing: border-box;
+}
+
+.base {
+  display: inline-flex;
+  flex-direction: column;
+  padding-block: 16px;
+  background-color: var(--fcs-color-white);
+}
+
+.base:focus {
+  outline: 3px solid var(--focus-color);
+}
+
+.base.rounded {
+  border-radius: 100px;
+}
+
+.base.primary:hover {
+  filter: brightness(85%);
+}
+
+.base.medium {
+  height: 400px;
+  width: 200px;
+}
+
+.label {
+  /* margin-inline: var(--label-overflow-padding); */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
