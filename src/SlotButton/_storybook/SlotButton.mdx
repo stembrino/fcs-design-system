@@ -4,6 +4,30 @@ import * as SlotButton from "./SlotButton.stories";
 <Meta of={SlotButton}  />
 
 # SlotButton
+```ts
+import { SlotButton } from "fcs-design-system"
+```
+
+## Code example:
+
+```tsx
+
+import { SlotButton } from "fcs-design-system"
+
+function Example() {
+  const handleOnClickButton = () => {
+    // do some stuff
+  }
+
+  return (
+    <>
+      <SlotButton label="Fancy Label" onClick={handleOnClickButton} size="small" variant="secondary" />
+    </>
+  )
+}
+
+export default Example;
+```
   
 
 <Canvas of={SlotButton.Primary} />
