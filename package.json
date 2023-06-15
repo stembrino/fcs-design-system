@@ -11,7 +11,7 @@
     "Typescript",
     "Storybook"
   ],
-  "homepage": "http://stembrino.github.io/fcs-design-system",
+  "homepage": "https://stembrino.github.io/fcs-design-system",
   "registry": "https://www.npmjs.com/package/fcs-design-system",
   "bugs": {
     "url": "https://github.com/stembrino/fcs-design-system/issues"

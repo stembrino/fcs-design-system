@@ -1,7 +1,7 @@
 # FCS Design System
 ### fcs-design-system
 
-🔗 Documentation page: https://stembrino.github.io/slot-design-system/
+🔗 Documentation page: https://stembrino.github.io/fcs-design-system
 
 You can install the [package](https://www.npmjs.com/package/fcs-design-system) via npm:
 
