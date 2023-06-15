@@ -13,7 +13,7 @@ yarn
 yarn sb
 ```
 ---
-## Rules
+## Rules 👩‍⚖️
 - Prioritize stateless over stateful components.
 - Do not "hadouken 🥦" the functions.
 - Complex functions must have unit tests.
