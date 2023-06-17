@@ -1,6 +1,6 @@
 {
   "name": "fcs-design-system",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "design system react components",
   "license": "MIT",
   "keywords": [
@@ -28,7 +28,8 @@
     "dist"
   ],
   "scripts": {
-    "gen": "node ./_scripts/createComponentTemplate.js",
+    "gen": "node ./_scripts/createComponentTemplate.js false",
+    "gen:sb": "node ./_scripts/createComponentTemplate.js true",
     "build": "rm -fr dist/ && rollup -c",
     "prepublishOnly": "yarn test && yarn build",
     "generate": "node ./util/create-component",
