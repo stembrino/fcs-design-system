@@ -3,7 +3,7 @@ const template = (componentName) => (
 import { render } from "@testing-library/react";
 
 import ${componentName} from "..";
-import { ${componentName}Props } from "../${componentName}.types";
+import { ${componentName}Props } from "../types";
 
 describe("TestComponent", () => {
   // eslint-disable-next-line no-empty-pattern

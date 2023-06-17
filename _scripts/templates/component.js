@@ -1,7 +1,7 @@
 const template = (componentName) => (
 `import React from "react";
-import styles from "./${componentName}.module.css";
-import { ${componentName}Props } from "./${componentName}.types";
+import styles from "./styles.module.css";
+import { ${componentName}Props } from "./types";
 
 const ${componentName}: React.FC<${componentName}Props> = () => {
   return (

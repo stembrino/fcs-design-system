@@ -1,7 +1,7 @@
 import React from "react";
-import { SlotButtonProps } from "./SlotButton.types";
-import styles from "./SlotButton.module.css";
-import { variants } from "./SlotButton.variants";
+import { SlotButtonProps } from "./types";
+import styles from "./styles.module.css";
+import { variants } from "./variants";
 import { classNames } from "../common/util";
 
 const DefaultButton: React.FC<SlotButtonProps> = ({

@@ -1,7 +1,7 @@
 import React from "react";
-import { SlotProductCardProps } from "./SlotProductCard.types";
-import styles from "./SlotButton.module.css";
-import { variants } from "./SlotProductCard.variants";
+import { SlotProductCardProps } from "./types";
+import styles from "./styles.module.css";
+import { variants } from "./variants";
 import Header from "./Header";
 
 const SlotProductCard: React.FC<SlotProductCardProps> = ({ size, variant, onClick }) => {

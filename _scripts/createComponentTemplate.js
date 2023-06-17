@@ -16,22 +16,22 @@ function createComponentTemplate(componentName, templatePath) {
 
 function createTypesTemplate(componentName, templatePath) {
   fs.mkdirSync(templatePath, { recursive: true });
-  fs.writeFileSync(path.join(templatePath, `${componentName}.types.ts`), types.template(componentName));
+  fs.writeFileSync(path.join(templatePath, `types.ts`), types.template(componentName));
 }
 
 function createTypesTemplateWithVariants(componentName, templatePath) {
   fs.mkdirSync(templatePath, { recursive: true });
-  fs.writeFileSync(path.join(templatePath, `${componentName}.types.ts`), types.templateWithVariants(componentName));
+  fs.writeFileSync(path.join(templatePath, `types.ts`), types.templateWithVariants(componentName));
 }
 
 function createStylesTemplate(componentName, templatePath) {
   fs.mkdirSync(templatePath, { recursive: true });
-  fs.writeFileSync(path.join(templatePath, `${componentName}.module.css`), stylesTemplate(componentName));
+  fs.writeFileSync(path.join(templatePath, `styles.module.css`), stylesTemplate(componentName));
 }
 
 function createVariantsTemplate(componentName, templatePath) {
   fs.mkdirSync(templatePath, { recursive: true });
-  fs.writeFileSync(path.join(templatePath, `${componentName}.variants.ts`), variantsTemplate(componentName));
+  fs.writeFileSync(path.join(templatePath, `variants.ts`), variantsTemplate(componentName));
 }
 
 function createTestTemplate(componentName, templatePath) {

@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./Header.module.css";
-import { HeaderProps } from "./Header.types";
+import styles from "./styles.module.css";
+import { HeaderProps } from "./types";
 import Icon from "@mdi/react";
 import { mdiHeartOutline, mdiHeart } from "@mdi/js";
 

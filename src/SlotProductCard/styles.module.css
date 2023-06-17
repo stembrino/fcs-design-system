@@ -1,7 +1,7 @@
 :root {
   --fcs-color-white: #ffffff;
 }
-* {
+.base * {
   outline: 1px solid black;
 }
 div {
@@ -15,7 +15,7 @@ div {
   background-color: var(--fcs-color-white);
 }
 
-.base:focus {
+.base:focus-visible {
   outline: 3px solid var(--focus-color);
 }
 
