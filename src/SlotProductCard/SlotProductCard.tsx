@@ -3,6 +3,7 @@ import { SlotProductCardProps } from "./types";
 import styles from "./styles.module.css";
 import { variants } from "./variants";
 import Header from "./Header";
+import Main from "./Main";
 
 const SlotProductCard: React.FC<SlotProductCardProps> = ({ size, variant, onClick }) => {
   // const cssVariables = {
@@ -21,6 +22,7 @@ const SlotProductCard: React.FC<SlotProductCardProps> = ({ size, variant, onClic
           console.log("clicked");
         }}
       />
+      <Main />
     </div>
   );
 };
