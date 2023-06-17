@@ -23,14 +23,27 @@ yarn sb
 ```
 
 ❗To generate a new component use the node script:
-```console
-yarn gen <Component Name>
-```
-> This will generate a new component inside the src directory with the proper configuration and structure.
 
-To generate with variants, use the same command passing true as second argument:
 ```console
-yarn gen <Component Name> true
+yarn gen <Component Name> <Optional: Has Variant> <Optional: Component Path>
+```
+Example to generate a new component:
+```console
+yarn gen MyComponent true
+```
+> This will generate a new component inside the src directory with the proper structure using variants file.
+
+To generate child component use the path:
+
+`yarn gen <Component Name> false <Parent Component Name>`
+
+Example:
+```console
+yarn gen ChildComponent false MyComponent
+```
+To next level:
+```console
+yarn gen NextChildComponent false MyComponent/ChildComponent
 ```
 ---
 ## Rules 👩‍⚖️

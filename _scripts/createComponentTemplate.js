@@ -45,13 +45,15 @@ function createIndexTemplate(componentName, templatePath) {
 
 const componentName = process.argv[2];
 const hasVariants =  process.argv[3] === "true" ? true : false;
-const hasTests = process.argv[4] === "true" ? true : false;
-const templatePath = path.join(__dirname, "..", "src", componentName);
+const templatePathParam = process.argv[4];
+
+const componentPath = templatePathParam ? `src/${templatePathParam}/`: "src";
+const templatePath = path.join(__dirname, "..", componentPath, componentName);
 
 createStylesTemplate(componentName, templatePath);
 createComponentTemplate(componentName, templatePath);
 createIndexTemplate(componentName, templatePath);
-hasTests && createTestTemplate(componentName, templatePath);
+createTestTemplate(componentName, templatePath);
 if (hasVariants) {
   createVariantsTemplate(componentName, templatePath);
   createTypesTemplateWithVariants(componentName, templatePath);
