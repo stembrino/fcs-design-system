@@ -21,6 +21,17 @@ yarn prepare
 yarn
 yarn sb
 ```
+
+❗To generate a new component use the node script:
+```console
+yarn gen <Component Name>
+```
+> This will generate a new component inside the src directory with the proper configuration and structure.
+
+To generate with variants, use the same command passing true as second argument:
+```console
+yarn gen <Component Name> true
+```
 ---
 ## Rules 👩‍⚖️
 - Mobile first.

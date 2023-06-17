@@ -11,3 +11,4 @@ yarn.lock
 *.css
 *.mdx
 *.md
+_scripts/
