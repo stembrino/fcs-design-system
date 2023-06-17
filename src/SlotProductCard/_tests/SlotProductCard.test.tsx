@@ -2,7 +2,7 @@ import React from "react";
 import { fireEvent, render, screen } from "@testing-library/react";
 
 import SlotProductCard from "..";
-import { SlotProductCardProps } from "../SlotProductCard.types";
+import { SlotProductCardProps } from "../types";
 
 describe("TestComponent", () => {
   // const renderComponent = ({ label = "test" }: Partial<SlotButtonProps>) => {

@@ -20,7 +20,7 @@ div {
   min-width: 80px;
 }
 
-.base:focus {
+.base:focus-visible {
   outline: 3px solid var(--focus-color);
 }
 

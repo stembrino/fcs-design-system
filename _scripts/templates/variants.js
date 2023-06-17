@@ -1,6 +1,6 @@
 const template = (componentName) => (
 `import { cva } from "class-variance-authority";
-import styles from "./${componentName}.module.css";
+import styles from "./styles.module.css";
 
 export const variants = cva(styles.base, {
   variants: {

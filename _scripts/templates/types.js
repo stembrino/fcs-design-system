@@ -6,7 +6,7 @@ const template = (componentName) => (
 
 const templateWithVariants = (componentName) => (
 `import { type VariantProps } from "class-variance-authority";
-import { variants } from "./${componentName}.variants";
+import { variants } from "./variants";
 
 export interface ${componentName}Props extends VariantProps<typeof variants> {
   onClick: (event: React.MouseEvent<HTMLDivElement>) => void;

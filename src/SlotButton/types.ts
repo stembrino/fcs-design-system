@@ -1,5 +1,5 @@
 import { type VariantProps } from "class-variance-authority";
-import { variants } from "./SlotButton.variants";
+import { variants } from "./variants";
 
 export interface SlotButtonProps extends VariantProps<typeof variants> {
   label: string;
