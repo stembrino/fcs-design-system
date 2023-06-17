@@ -57,21 +57,6 @@ yarn gen NextChildComponent false MyComponent/ChildComponent
 
 ### External library
 Avoid use external library. use just if really needed. This library.
-### Component Structure
-
-```
-/src
-  /[YourComponentName]
-    /_storybook/[YourComponentName].stories.tsx
-    /_storybook/[YourComponentName].stories.mdx
-    /_test/[YourComponentName].test.tsx
-    [YourComponentName].tsx
-    [YourComponentName].stories.tsx
-    [YourComponentName].types.ts
-    [YourComponentName].css
-    helper.ts // Not required
-    index.ts
-```
 
 > Don't forget to add the component to your `index.ts` exports if you want the library to export the component!
 
