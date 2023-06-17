@@ -22,10 +22,12 @@ yarn
 yarn sb
 ```
 
-❗To generate a new component use the node script:
+❗To generate a new component use `yarn gen:sb` or `yarn gen` commands:
+
+To generate the first level use the `yarn gen:sb <Component Name> <Optional: Has Variant>`, for example:
 
 ```console
-yarn gen <Component Name> <Optional: Has Variant> <Optional: Component Path>
+yarn gen:sb <Component Name> <Optional: Has Variant>
 ```
 Example to generate a new component:
 ```console
