@@ -2,34 +2,27 @@
   --fcs-color-white: #ffffff;
 }
 .base * {
-  outline: 1px solid black;
+  /* outline: 1px solid black; */
 }
-div {
+
+.base div {
   box-sizing: border-box;
 }
 
 .base {
+  position: relative;
   display: inline-flex;
   flex-direction: column;
+  gap: 10px;
+
   padding-block: 16px;
   background-color: var(--fcs-color-white);
+  height: 400px;
+  width: 200px;
 }
 
 .base:focus-visible {
   outline: 3px solid var(--focus-color);
-}
-
-.base.rounded {
-  border-radius: 100px;
-}
-
-.base.primary:hover {
-  filter: brightness(85%);
-}
-
-.base.medium {
-  height: 400px;
-  width: 200px;
 }
 
 .label {

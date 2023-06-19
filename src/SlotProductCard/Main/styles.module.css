@@ -1,2 +1,14 @@
 .base {
+  flex-grow: 1;
+  padding-inline: 8%;
+}
+
+.draw {
+  z-index: 0;
+  position: absolute;
+  right: 0;
+  bottom: 20%;
+  height: 50%;
+  opacity: 50%;
+  filter: brightness(85%);
 }
