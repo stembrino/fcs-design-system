@@ -11,4 +11,8 @@
   height: 50%;
   opacity: 50%;
   filter: brightness(85%);
+  object-fit: cover;
+  object-position: center center;
+  user-select: none;
+  pointer-events: none;
 }
