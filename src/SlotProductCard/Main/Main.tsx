@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./styles.module.css";
 import { MainProps } from "./types";
-import draw from "./assets/draw.svg";
+import BackgroundSVG from "./assets/Background";
 
 const Main: React.FC<MainProps> = () => {
   return (
     <div className={styles.base}>
-      <div className={styles.title}>Nike Adapt BB</div>
-      <img className={styles.draw} src={draw} />
+      <div className={styles.title}>Nike Adapt BBz/</div>
+      <BackgroundSVG className={styles.draw} />
       <div className={styles.details}>
         <span>$ 79</span>
         <span>Made for every athlete craving speed and efficiency</span>
