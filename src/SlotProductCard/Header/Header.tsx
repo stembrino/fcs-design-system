@@ -4,10 +4,10 @@ import { HeaderProps } from "./types";
 import Icon from "@mdi/react";
 import { mdiHeartOutline } from "@mdi/js";
 
-const Header: React.FC<HeaderProps> = () => {
+const Header: React.FC<HeaderProps> = ({ heartColor }) => {
   return (
     <div className={styles.base}>
-      <Icon path={mdiHeartOutline} size={1} />
+      <Icon path={mdiHeartOutline} size={1} color={heartColor} />
     </div>
   );
 };
