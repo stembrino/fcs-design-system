@@ -14,7 +14,7 @@ yarn add fcs-design-system
 
 ---
 ## Start develop
-> Recommended VSC extensions: https://github.com/stembrino/save-docs-fcs/blob/master/docs/vsc.md
+> Recommended VSC profile to development: https://gist.github.com/stembrino/bafdbadf2f55cf23b884eb73a75615a4
 
 ```console
 yarn prepare
