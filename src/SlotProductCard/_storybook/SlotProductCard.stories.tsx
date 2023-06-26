@@ -7,7 +7,6 @@ const meta: Meta<typeof SlotProductCard> = {
   component: SlotProductCard,
   parameters: {
     backgrounds: {
-      // default: "black",
       values: [
         {
           name: "black",
@@ -18,14 +17,9 @@ const meta: Meta<typeof SlotProductCard> = {
     },
   },
   argTypes: {
-    onClick: { action: "clicked" },
-    variant: {
-      options: ["primary"],
-      control: { type: "radio" },
-    },
-    size: {
-      options: ["small", "medium", "large"],
-      control: { type: "radio" },
+    // onClick: { action: "clicked" },
+    color: {
+      control: { type: "color" },
     },
   },
 };
@@ -35,7 +29,27 @@ type Story = StoryObj<typeof SlotProductCard>;
 
 export const Primary: Story = {
   args: {
-    variant: "primary",
+    src: "/product-example_preview_rev_1.png",
+  },
+  parameters: {
+    backgrounds: { default: "twitter" },
+  },
+};
+
+export const WithBlue: Story = {
+  args: {
+    ...Primary.args,
+    color: "#1543a0",
+  },
+  parameters: {
+    backgrounds: { default: "twitter" },
+  },
+};
+
+export const WithPinkColor: Story = {
+  args: {
+    ...Primary.args,
+    color: "#e02ab1",
   },
   parameters: {
     backgrounds: { default: "black" },

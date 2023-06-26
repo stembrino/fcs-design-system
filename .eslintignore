@@ -12,3 +12,4 @@ yarn.lock
 *.mdx
 *.md
 _scripts/
+*.svg
