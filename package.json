@@ -28,8 +28,7 @@
     "dist"
   ],
   "scripts": {
-    "gen": "node ./_scripts/createComponentTemplate.js false",
-    "gen:sb": "node ./_scripts/createComponentTemplate.js true",
+    "gen": "node ./_scripts/main.js",
     "build": "rm -fr dist/ && rollup -c",
     "prepublishOnly": "yarn test && yarn build",
     "generate": "node ./util/create-component",
@@ -76,6 +75,7 @@
     "gh-pages": "^5.0.0",
     "husky": "^8.0.3",
     "identity-obj-proxy": "^3.0.0",
+    "inquirer": "^8.0.0",
     "jest": "^29.5.0",
     "jsdom": "^22.1.0",
     "prettier": "^2.8.8",
