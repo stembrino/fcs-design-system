@@ -27,16 +27,16 @@ const meta: Meta<typeof SlotProductCard> = {
 export default meta;
 type Story = StoryObj<typeof SlotProductCard>;
 
-export const Primary: Story = {
+export const Sample: Story = {
   args: {
-    src: "https://raw.githubusercontent.com/stembrino/fcs-design-system/master/public/product-example_preview_rev_1.png",
+    src: "https://github.com/stembrino/fcs-design-system/blob/master/assets/product-example_preview_rev_1.png?raw=true",
     border: true,
   },
 };
 
 export const WithBlue: Story = {
   args: {
-    ...Primary.args,
+    ...Sample.args,
     color: "#1543a0",
     border: false,
   },
