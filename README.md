@@ -22,31 +22,10 @@ yarn
 yarn sb
 ```
 
-❗To generate a new component use `yarn gen:sb` or `yarn gen` commands:
+### Use the prompt `yarn gen` to generate new components 🤖
 
-To generate the first level use the `yarn gen:sb <Component Name> <Optional: Has Variant>`, for example:
+![Alt text](assets/sample-script.gif)
 
-```console
-yarn gen:sb <Component Name> <Optional: Has Variant>
-```
-Example to generate a new component:
-```console
-yarn gen MyComponent true
-```
-> This will generate a new component inside the src directory with the proper structure using variants file.
-
-To generate child component use the path:
-
-`yarn gen <Component Name> false <Parent Component Name>`
-
-Example:
-```console
-yarn gen ChildComponent false MyComponent
-```
-To next level:
-```console
-yarn gen NextChildComponent false MyComponent/ChildComponent
-```
 ---
 ## Rules 👩‍⚖️
 - Mobile first.
