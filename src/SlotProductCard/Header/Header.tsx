@@ -2,12 +2,14 @@ import React from "react";
 import styles from "./styles.module.css";
 import { HeaderProps } from "./types";
 import Icon from "@mdi/react";
-import { mdiHeartOutline } from "@mdi/js";
+import { mdiHeartOutline, mdiHeart } from "@mdi/js";
 
-const Header: React.FC<HeaderProps> = ({ heartColor }) => {
+const Header: React.FC<HeaderProps> = ({ heartColor, like }) => {
+  const heartIcon = like ? mdiHeart : mdiHeartOutline;
+
   return (
     <div className={styles.base}>
-      <Icon path={mdiHeartOutline} size={1} color={heartColor} />
+      <Icon className={styles["heart-icon"]} path={heartIcon} size={1} color={heartColor} />
     </div>
   );
 };

@@ -3,6 +3,7 @@ import { SlotButtonProps } from "./types";
 import styles from "./styles.module.css";
 import { variants } from "./variants";
 import { classNames } from "../common/util";
+import { CSSProperties } from "../common/types";
 
 const DefaultButton: React.FC<SlotButtonProps> = ({
   label,
@@ -16,14 +17,15 @@ const DefaultButton: React.FC<SlotButtonProps> = ({
   onClick,
 }) => {
   const roundedClass = rounded ? styles.rounded : "";
-  const cssVariables = {
+  const cssProperties: CSSProperties = {
     "--button-color": color,
     "--focus-color": focusColor,
+    width,
   };
 
   return (
     <div
-      style={{ width, ...cssVariables }}
+      style={{ ...cssProperties }}
       className={variants({ size, variant, className: classNames(roundedClass) })}
       role="button"
       onClick={onClick}

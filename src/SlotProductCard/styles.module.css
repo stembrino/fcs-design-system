@@ -25,6 +25,10 @@
   outline: 3px solid var(--focus-color);
 }
 
+.base.border {
+  border: 1px solid var(--border-color);
+}
+
 .label {
   /* margin-inline: var(--label-overflow-padding); */
   overflow: hidden;

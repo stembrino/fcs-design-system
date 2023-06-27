@@ -29,10 +29,8 @@ type Story = StoryObj<typeof SlotProductCard>;
 
 export const Primary: Story = {
   args: {
-    src: "/product-example_preview_rev_1.png",
-  },
-  parameters: {
-    backgrounds: { default: "twitter" },
+    src: "https://raw.githubusercontent.com/stembrino/fcs-design-system/master/public/product-example_preview_rev_1.png",
+    border: true,
   },
 };
 
@@ -40,15 +38,16 @@ export const WithBlue: Story = {
   args: {
     ...Primary.args,
     color: "#1543a0",
+    border: false,
   },
   parameters: {
     backgrounds: { default: "twitter" },
   },
 };
 
-export const WithPinkColor: Story = {
+export const WithPink: Story = {
   args: {
-    ...Primary.args,
+    ...WithBlue.args,
     color: "#e02ab1",
   },
   parameters: {

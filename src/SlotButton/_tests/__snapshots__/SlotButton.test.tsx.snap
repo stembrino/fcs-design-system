@@ -6,7 +6,7 @@ exports[`TestComponent should snapshot match 1`] = `
     aria-label="Button"
     class="base primary medium"
     role="button"
-    style="width: auto; --button-color: #304ffe; --focus-color: #1c1b1b;"
+    style="--button-color: #304ffe; --focus-color: #1c1b1b; width: auto;"
     tabindex="0"
   >
     <span
