@@ -32,6 +32,7 @@
     "build": "rm -fr dist/ && rollup -c",
     "prepublishOnly": "yarn test && yarn build",
     "generate": "node ./util/create-component",
+    "gh:clean": "gh-pages-clean",
     "gh:page": "gh-pages -d storybook-static",
     "sb": "storybook dev",
     "sb:export": "storybook dist",
