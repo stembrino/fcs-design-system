@@ -28,7 +28,7 @@
     "dist"
   ],
   "scripts": {
-    "gen": "node ./_scripts/main.js",
+    "gen": "node ./node_modules/prompt-component-gen/dist/main.js",
     "build": "rm -fr dist/ && rollup -c",
     "prepublishOnly": "yarn test && yarn build",
     "generate": "node ./util/create-component",
@@ -76,10 +76,10 @@
     "gh-pages": "^5.0.0",
     "husky": "^8.0.3",
     "identity-obj-proxy": "^3.0.0",
-    "inquirer": "^8.0.0",
     "jest": "^29.5.0",
     "jsdom": "^22.1.0",
     "prettier": "^2.8.8",
+    "prompt-component-gen": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^2.79.1",
