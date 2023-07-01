@@ -23,8 +23,9 @@ yarn sb
 ```
 
 ### Use the prompt `yarn gen` to generate new components 🤖
+GitHub: [prompt-component-gen](https://github.com/stembrino/prompt-component-gen)
 
-![Alt text](assets/sample-script.gif)
+![gif component generator](https://github.com/stembrino/prompt-component-gen/blob/master/public/sample-script.gif?raw=true)
 
 ---
 ## Rules 👩‍⚖️
